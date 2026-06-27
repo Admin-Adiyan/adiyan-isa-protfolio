@@ -1043,7 +1043,7 @@ RESPONSIVE
 
 <!-- FOOTER -->
 <footer>
-  <p class="footer-copy">© 2024 <strong>Adiyan Isa</strong>. All Rights Reserved.</p>
+  <p class="footer-copy">© 2026 <strong>Adiyan Isa</strong>. All Rights Reserved.</p>
   <p class="footer-quote">&gt; Code. Design. Innovate. Never stop learning.</p>
 </footer>
 
@@ -1482,7 +1482,7 @@ document.querySelectorAll('.stats-strip').forEach(el=>statObs.observe(el));
 ══════════════════════════════ */
 (function(){
   if(typeof emailjs !== 'undefined'){
-    emailjs.init({ publicKey: 'YOUR_PUBLIC_KEY' });
+    emailjs.init({ publicKey: 'QWWkun8jN7mzwO4pr' });
   }
 })();
 
@@ -1505,7 +1505,7 @@ function sendEmail() {
     status.className = 'form-status error'; return;
   }
 
-  if(typeof emailjs === 'undefined' || 'YOUR_PUBLIC_KEY' === 'YOUR_PUBLIC_KEY'){
+  if(typeof emailjs === 'undefined' || 'QWWkun8jN7mzwO4pr' === 'QWWkun8jN7mzwO4pr'){
     btn.disabled = true; btn.textContent = '⏳ Sending...';
     setTimeout(()=>{
       status.textContent = '> Demo mode: Connect EmailJS to send real emails. (isaadiyan@gmail.com)';
@@ -1516,7 +1516,7 @@ function sendEmail() {
   }
 
   btn.disabled = true; btn.textContent = '⏳ Sending...';
-  emailjs.send('YOUR_SERVICE_ID','YOUR_TEMPLATE_ID',{
+  emailjs.send('service_rc0cazh',
     from_name: name, from_email: email, message: msg, to_email: 'isaadiyan@gmail.com'
   }).then(()=>{
     status.textContent = '> Message sent successfully! I will reply soon.';
